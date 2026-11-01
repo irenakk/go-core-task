@@ -2,10 +2,6 @@
 
 My solutions to the Go-core module tasks. The task text is in [task.md](task.md) (in Russian). Each task is a small `main` package with unit tests.
 
-## Where the code is
-
-As the assignment asks, every task was done in its own branch, named `1` to `9`, with the code in a folder of the same name (for example `5/main_5.go` and `5/main5_test.go`). The branches aren't merged into `main` yet, so `main` only has the task text and `go.mod`.
-
 | Task | What it does |
 |---|---|
 | 1 | Prints the types of a few variables, joins them into one string, then hashes it as a rune slice with SHA-256 and the salt `go-2024` inserted in the middle |
@@ -21,7 +17,6 @@ As the assignment asks, every task was done in its own branch, named `1` to `9`,
 ## How to run
 
 ```bash
-git checkout 7
 go test ./7/
 go run ./7
 ```
