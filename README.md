@@ -1,6 +1,6 @@
 # go-core-task
 
-My solutions to the Go-core module tasks. The task text is in [task.md](task.md) (in Russian). Each task is a small `main` package with unit tests.
+My solutions to the Go-core module tasks. The task text is in [task.md](task.md) (in Russian). Each task is a small `main` package with unit tests, in a folder with the task number. Every task was done in its own branch first and then merged into `main`.
 
 | Task | What it does |
 |---|---|
@@ -16,11 +16,17 @@ My solutions to the Go-core module tasks. The task text is in [task.md](task.md)
 
 ## How to run
 
+Run all tests:
+
+```bash
+go test ./...
+```
+
+Or one task:
+
 ```bash
 go test ./7/
 go run ./7
 ```
 
-Notes:
-- Task 3 has no `main` function, only the type and its tests, so use `go test` there.
-- Branch `1` was created before `go.mod` was added. On that branch, run `go test main_1.go main1_test.go` from inside `1/`.
+Task 3 is only the `StringIntMap` type and its tests, so there's nothing to `go run` there.
